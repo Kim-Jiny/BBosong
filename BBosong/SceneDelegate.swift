@@ -20,9 +20,18 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow(windowScene: windowScene)
         // 자동 로그인 확인하고 로그인 VC로 넘겨야함.
     
-        let initialViewController = BBLoginVC()
-        window.rootViewController = initialViewController
-
+//        let initialViewController = BBLoginVC()
+//        window.rootViewController = initialViewController
+//
+//        self.window = window
+//        window.makeKeyAndVisible()
+        
+        let navigationController = UINavigationController()
+        let tabBarController = MainTabBarController()
+        let mainCoordinator = MainCoordinator(navigationController: navigationController, tabBarController: tabBarController)
+        mainCoordinator.start()
+        
+        window.rootViewController = navigationController
         self.window = window
         window.makeKeyAndVisible()
     }

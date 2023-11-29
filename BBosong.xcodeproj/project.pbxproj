@@ -29,6 +29,14 @@
 		3063A0312B12134400485662 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 3063A0302B12134400485662 /* FirebaseMessaging */; };
 		3063A0332B12145100485662 /* BBColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3063A0322B12145100485662 /* BBColor.swift */; };
 		3063A0352B1217A300485662 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3063A0342B1217A300485662 /* GoogleService-Info.plist */; };
+		30DEDE0D2B17668900EC6B3F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DEDE0C2B17668900EC6B3F /* Coordinator.swift */; };
+		30DEDE122B1766CA00EC6B3F /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DEDE112B1766CA00EC6B3F /* MainCoordinator.swift */; };
+		30DEDE142B1766EE00EC6B3F /* TabHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DEDE132B1766EE00EC6B3F /* TabHomeViewController.swift */; };
+		30DEDE172B1767A400EC6B3F /* TabSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DEDE162B1767A400EC6B3F /* TabSettingViewController.swift */; };
+		30DEDE192B1767C900EC6B3F /* TabHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DEDE182B1767C900EC6B3F /* TabHomeViewModel.swift */; };
+		30DEDE1B2B1767D300EC6B3F /* TabSettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DEDE1A2B1767D300EC6B3F /* TabSettingViewModel.swift */; };
+		30DEDE1D2B17686200EC6B3F /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DEDE1C2B17686200EC6B3F /* MainTabBarController.swift */; };
+		30DEDE1F2B176AA100EC6B3F /* Extension+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DEDE1E2B176AA100EC6B3F /* Extension+UIImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +73,14 @@
 		3063A0192B12126800485662 /* BBLoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBLoginVC.swift; sourceTree = "<group>"; };
 		3063A0322B12145100485662 /* BBColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBColor.swift; sourceTree = "<group>"; };
 		3063A0342B1217A300485662 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		30DEDE0C2B17668900EC6B3F /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		30DEDE112B1766CA00EC6B3F /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		30DEDE132B1766EE00EC6B3F /* TabHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabHomeViewController.swift; sourceTree = "<group>"; };
+		30DEDE162B1767A400EC6B3F /* TabSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabSettingViewController.swift; sourceTree = "<group>"; };
+		30DEDE182B1767C900EC6B3F /* TabHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabHomeViewModel.swift; sourceTree = "<group>"; };
+		30DEDE1A2B1767D300EC6B3F /* TabSettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabSettingViewModel.swift; sourceTree = "<group>"; };
+		30DEDE1C2B17686200EC6B3F /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		30DEDE1E2B176AA100EC6B3F /* Extension+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIImage.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +141,7 @@
 		304DC6152B11DAA500E01656 /* BBosong */ = {
 			isa = PBXGroup;
 			children = (
+				30DEDE0E2B17669F00EC6B3F /* MainTab */,
 				3063A0122B12121400485662 /* Common */,
 				3063A0192B12126800485662 /* BBLoginVC.swift */,
 				304DC6162B11DAA500E01656 /* AppDelegate.swift */,
@@ -158,6 +175,7 @@
 		3063A0122B12121400485662 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				30DEDE0B2B17667B00EC6B3F /* Coordinator */,
 				3063A0142B12122200485662 /* Extensions */,
 				3063A0132B12121900485662 /* Utility */,
 			);
@@ -176,8 +194,54 @@
 			isa = PBXGroup;
 			children = (
 				3063A0172B12125D00485662 /* Extension+UIColor.swift */,
+				30DEDE1E2B176AA100EC6B3F /* Extension+UIImage.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		30DEDE0B2B17667B00EC6B3F /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				30DEDE0C2B17668900EC6B3F /* Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		30DEDE0E2B17669F00EC6B3F /* MainTab */ = {
+			isa = PBXGroup;
+			children = (
+				30DEDE102B1766B900EC6B3F /* Main */,
+				30DEDE0F2B1766A800EC6B3F /* Home */,
+				30DEDE152B17671100EC6B3F /* Setting */,
+			);
+			path = MainTab;
+			sourceTree = "<group>";
+		};
+		30DEDE0F2B1766A800EC6B3F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				30DEDE132B1766EE00EC6B3F /* TabHomeViewController.swift */,
+				30DEDE182B1767C900EC6B3F /* TabHomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		30DEDE102B1766B900EC6B3F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				30DEDE112B1766CA00EC6B3F /* MainCoordinator.swift */,
+				30DEDE1C2B17686200EC6B3F /* MainTabBarController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		30DEDE152B17671100EC6B3F /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				30DEDE162B1767A400EC6B3F /* TabSettingViewController.swift */,
+				30DEDE1A2B1767D300EC6B3F /* TabSettingViewModel.swift */,
+			);
+			path = Setting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,11 +393,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				3063A01A2B12126800485662 /* BBLoginVC.swift in Sources */,
+				30DEDE122B1766CA00EC6B3F /* MainCoordinator.swift in Sources */,
 				3063A0332B12145100485662 /* BBColor.swift in Sources */,
 				3063A0182B12125D00485662 /* Extension+UIColor.swift in Sources */,
 				304DC61B2B11DAA500E01656 /* ViewController.swift in Sources */,
+				30DEDE1B2B1767D300EC6B3F /* TabSettingViewModel.swift in Sources */,
+				30DEDE142B1766EE00EC6B3F /* TabHomeViewController.swift in Sources */,
+				30DEDE1F2B176AA100EC6B3F /* Extension+UIImage.swift in Sources */,
+				30DEDE1D2B17686200EC6B3F /* MainTabBarController.swift in Sources */,
 				304DC6172B11DAA500E01656 /* AppDelegate.swift in Sources */,
+				30DEDE172B1767A400EC6B3F /* TabSettingViewController.swift in Sources */,
 				304DC6192B11DAA500E01656 /* SceneDelegate.swift in Sources */,
+				30DEDE192B1767C900EC6B3F /* TabHomeViewModel.swift in Sources */,
+				30DEDE0D2B17668900EC6B3F /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
