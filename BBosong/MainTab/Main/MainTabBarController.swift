@@ -11,7 +11,6 @@ import UIKit
 class MainTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Customize TabBarController if needed
         self.tabBar.barTintColor = UIColor.yellow
     }
 }

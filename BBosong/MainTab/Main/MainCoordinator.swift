@@ -10,9 +10,9 @@ import UIKit
 
 class MainCoordinator: Coordinator {
     var navigationController: UINavigationController
-    let tabBarController: UITabBarController
+    let tabBarController: MainTabBarController
 
-    init(navigationController: UINavigationController, tabBarController: UITabBarController) {
+    init(navigationController: UINavigationController, tabBarController: MainTabBarController) {
         self.navigationController = navigationController
         self.tabBarController = tabBarController
     }

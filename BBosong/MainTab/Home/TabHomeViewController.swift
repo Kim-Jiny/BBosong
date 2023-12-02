@@ -7,9 +7,16 @@
 
 import Foundation
 import UIKit
+import SnapKit
 
 class TabHomeViewController: UIViewController {
     var viewModel: TabHomeViewModel!
+    
+    lazy var mainScrollView: UIScrollView = {
+        let scrollView = UIScrollView(frame: .zero)
+        scrollView.backgroundColor = .BBColor.mainColor
+        return scrollView
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,5 +26,15 @@ class TabHomeViewController: UIViewController {
         
 //        self.view.backgroundColor = .red
         // TODO: 뷰 구성 및 아이템 표시
+        setupUI()
+    }
+    
+    private func setupUI() {
+        self.view.addSubview(mainScrollView)
+        mainScrollView.snp.makeConstraints { maker in
+            maker.top.bottom.leading.trailing.equalToSuperview()
+            maker.width.equalToSuperview()
+            maker.height.equalToSuperview().priority(.low)
+        }
     }
 }

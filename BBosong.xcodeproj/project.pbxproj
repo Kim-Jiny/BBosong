@@ -37,6 +37,7 @@
 		30DEDE1B2B1767D300EC6B3F /* TabSettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DEDE1A2B1767D300EC6B3F /* TabSettingViewModel.swift */; };
 		30DEDE1D2B17686200EC6B3F /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DEDE1C2B17686200EC6B3F /* MainTabBarController.swift */; };
 		30DEDE1F2B176AA100EC6B3F /* Extension+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DEDE1E2B176AA100EC6B3F /* Extension+UIImage.swift */; };
+		30DEDE242B19B4A800EC6B3F /* BBNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DEDE232B19B4A800EC6B3F /* BBNavigationBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		30DEDE1A2B1767D300EC6B3F /* TabSettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabSettingViewModel.swift; sourceTree = "<group>"; };
 		30DEDE1C2B17686200EC6B3F /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		30DEDE1E2B176AA100EC6B3F /* Extension+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIImage.swift"; sourceTree = "<group>"; };
+		30DEDE232B19B4A800EC6B3F /* BBNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBNavigationBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +212,7 @@
 		30DEDE0E2B17669F00EC6B3F /* MainTab */ = {
 			isa = PBXGroup;
 			children = (
+				30DEDE222B19B3E500EC6B3F /* BBNavigation */,
 				30DEDE102B1766B900EC6B3F /* Main */,
 				30DEDE0F2B1766A800EC6B3F /* Home */,
 				30DEDE152B17671100EC6B3F /* Setting */,
@@ -242,6 +245,14 @@
 				30DEDE1A2B1767D300EC6B3F /* TabSettingViewModel.swift */,
 			);
 			path = Setting;
+			sourceTree = "<group>";
+		};
+		30DEDE222B19B3E500EC6B3F /* BBNavigation */ = {
+			isa = PBXGroup;
+			children = (
+				30DEDE232B19B4A800EC6B3F /* BBNavigationBar.swift */,
+			);
+			path = BBNavigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -399,6 +410,7 @@
 				304DC61B2B11DAA500E01656 /* ViewController.swift in Sources */,
 				30DEDE1B2B1767D300EC6B3F /* TabSettingViewModel.swift in Sources */,
 				30DEDE142B1766EE00EC6B3F /* TabHomeViewController.swift in Sources */,
+				30DEDE242B19B4A800EC6B3F /* BBNavigationBar.swift in Sources */,
 				30DEDE1F2B176AA100EC6B3F /* Extension+UIImage.swift in Sources */,
 				30DEDE1D2B17686200EC6B3F /* MainTabBarController.swift in Sources */,
 				304DC6172B11DAA500E01656 /* AppDelegate.swift in Sources */,
