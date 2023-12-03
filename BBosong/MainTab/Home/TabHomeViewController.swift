@@ -18,6 +18,11 @@ class TabHomeViewController: UIViewController {
         return scrollView
     }()
 
+    lazy var mainStackView: UIStackView = {
+        let st = UIStackView(frame: .zero)
+        return st
+    }()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // 뷰 모델 초기화 및 데이터 가져오기
@@ -35,6 +40,11 @@ class TabHomeViewController: UIViewController {
             maker.top.bottom.leading.trailing.equalToSuperview()
             maker.width.equalToSuperview()
             maker.height.equalToSuperview().priority(.low)
+        }
+        
+        mainScrollView.addSubview(mainStackView)
+        mainStackView.snp.makeConstraints { make in
+            make.top.bottom.leading.trailing.equalToSuperview()
         }
     }
 }
