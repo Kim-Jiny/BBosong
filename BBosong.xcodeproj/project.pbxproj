@@ -38,6 +38,11 @@
 		30DEDE1D2B17686200EC6B3F /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DEDE1C2B17686200EC6B3F /* MainTabBarController.swift */; };
 		30DEDE1F2B176AA100EC6B3F /* Extension+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DEDE1E2B176AA100EC6B3F /* Extension+UIImage.swift */; };
 		30DEDE242B19B4A800EC6B3F /* BBNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DEDE232B19B4A800EC6B3F /* BBNavigationBar.swift */; };
+		30DEDE272B1D80E700EC6B3F /* MyCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DEDE262B1D80E700EC6B3F /* MyCardView.swift */; };
+		30DEDE2C2B1D830400EC6B3F /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DEDE2B2B1D830400EC6B3F /* UserInfo.swift */; };
+		30DEDE2E2B1D84A000EC6B3F /* PetInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DEDE2D2B1D84A000EC6B3F /* PetInfo.swift */; };
+		30DEDE312B1D955400EC6B3F /* EmailLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DEDE302B1D955400EC6B3F /* EmailLoginViewController.swift */; };
+		30DEDE332B1DA55200EC6B3F /* EmailLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DEDE322B1DA55200EC6B3F /* EmailLoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +88,11 @@
 		30DEDE1C2B17686200EC6B3F /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		30DEDE1E2B176AA100EC6B3F /* Extension+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIImage.swift"; sourceTree = "<group>"; };
 		30DEDE232B19B4A800EC6B3F /* BBNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBNavigationBar.swift; sourceTree = "<group>"; };
+		30DEDE262B1D80E700EC6B3F /* MyCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCardView.swift; sourceTree = "<group>"; };
+		30DEDE2B2B1D830400EC6B3F /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		30DEDE2D2B1D84A000EC6B3F /* PetInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetInfo.swift; sourceTree = "<group>"; };
+		30DEDE302B1D955400EC6B3F /* EmailLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailLoginViewController.swift; sourceTree = "<group>"; };
+		30DEDE322B1DA55200EC6B3F /* EmailLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailLoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +153,7 @@
 		304DC6152B11DAA500E01656 /* BBosong */ = {
 			isa = PBXGroup;
 			children = (
+				30DEDE2F2B1D8B1800EC6B3F /* Login */,
 				30DEDE0E2B17669F00EC6B3F /* MainTab */,
 				3063A0122B12121400485662 /* Common */,
 				3063A0192B12126800485662 /* BBLoginVC.swift */,
@@ -177,6 +188,7 @@
 		3063A0122B12121400485662 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				30DEDE292B1D82EB00EC6B3F /* UserData */,
 				30DEDE0B2B17667B00EC6B3F /* Coordinator */,
 				3063A0142B12122200485662 /* Extensions */,
 				3063A0132B12121900485662 /* Utility */,
@@ -241,6 +253,8 @@
 		30DEDE152B17671100EC6B3F /* Setting */ = {
 			isa = PBXGroup;
 			children = (
+				30DEDE282B1D82CC00EC6B3F /* Models */,
+				30DEDE252B1D80D000EC6B3F /* MyCardView */,
 				30DEDE162B1767A400EC6B3F /* TabSettingViewController.swift */,
 				30DEDE1A2B1767D300EC6B3F /* TabSettingViewModel.swift */,
 			);
@@ -253,6 +267,39 @@
 				30DEDE232B19B4A800EC6B3F /* BBNavigationBar.swift */,
 			);
 			path = BBNavigation;
+			sourceTree = "<group>";
+		};
+		30DEDE252B1D80D000EC6B3F /* MyCardView */ = {
+			isa = PBXGroup;
+			children = (
+				30DEDE262B1D80E700EC6B3F /* MyCardView.swift */,
+			);
+			path = MyCardView;
+			sourceTree = "<group>";
+		};
+		30DEDE282B1D82CC00EC6B3F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		30DEDE292B1D82EB00EC6B3F /* UserData */ = {
+			isa = PBXGroup;
+			children = (
+				30DEDE2B2B1D830400EC6B3F /* UserInfo.swift */,
+				30DEDE2D2B1D84A000EC6B3F /* PetInfo.swift */,
+			);
+			path = UserData;
+			sourceTree = "<group>";
+		};
+		30DEDE2F2B1D8B1800EC6B3F /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				30DEDE302B1D955400EC6B3F /* EmailLoginViewController.swift */,
+				30DEDE322B1DA55200EC6B3F /* EmailLoginViewModel.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -404,11 +451,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				3063A01A2B12126800485662 /* BBLoginVC.swift in Sources */,
+				30DEDE332B1DA55200EC6B3F /* EmailLoginViewModel.swift in Sources */,
 				30DEDE122B1766CA00EC6B3F /* MainCoordinator.swift in Sources */,
+				30DEDE312B1D955400EC6B3F /* EmailLoginViewController.swift in Sources */,
 				3063A0332B12145100485662 /* BBColor.swift in Sources */,
 				3063A0182B12125D00485662 /* Extension+UIColor.swift in Sources */,
 				304DC61B2B11DAA500E01656 /* ViewController.swift in Sources */,
+				30DEDE2C2B1D830400EC6B3F /* UserInfo.swift in Sources */,
 				30DEDE1B2B1767D300EC6B3F /* TabSettingViewModel.swift in Sources */,
+				30DEDE272B1D80E700EC6B3F /* MyCardView.swift in Sources */,
 				30DEDE142B1766EE00EC6B3F /* TabHomeViewController.swift in Sources */,
 				30DEDE242B19B4A800EC6B3F /* BBNavigationBar.swift in Sources */,
 				30DEDE1F2B176AA100EC6B3F /* Extension+UIImage.swift in Sources */,
@@ -416,6 +467,7 @@
 				304DC6172B11DAA500E01656 /* AppDelegate.swift in Sources */,
 				30DEDE172B1767A400EC6B3F /* TabSettingViewController.swift in Sources */,
 				304DC6192B11DAA500E01656 /* SceneDelegate.swift in Sources */,
+				30DEDE2E2B1D84A000EC6B3F /* PetInfo.swift in Sources */,
 				30DEDE192B1767C900EC6B3F /* TabHomeViewModel.swift in Sources */,
 				30DEDE0D2B17668900EC6B3F /* Coordinator.swift in Sources */,
 			);

@@ -11,6 +11,7 @@ import UIKit
 class TabSettingViewController: UIViewController {
     var viewModel: TabSettingViewModel!
     
+    // Outlet
     lazy var mainScrollView: UIScrollView = {
         let scrollView = UIScrollView(frame: .zero)
         scrollView.backgroundColor = .BBColor.subColor
@@ -22,9 +23,10 @@ class TabSettingViewController: UIViewController {
         return st
     }()
     
-    lazy var settingStackView: UIStackView = {
-        let st = UIStackView(frame: .zero)
-        return st
+    // My Card
+    lazy var myView: MyCardView = {
+        let v = MyCardView(frame: .zero)
+        return v
     }()
     
     override func viewDidLoad() {
@@ -47,6 +49,11 @@ class TabSettingViewController: UIViewController {
         mainScrollView.addSubview(settingStackView)
         settingStackView.snp.makeConstraints { make in
             make.top.bottom.leading.trailing.equalToSuperview()
+        }
+        
+        settingStackView.addArrangedSubview(myView)
+        myView.snp.makeConstraints { make in
+            make.height.equalTo(70)
         }
     }
 }
