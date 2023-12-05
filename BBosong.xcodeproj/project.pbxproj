@@ -43,6 +43,9 @@
 		30DEDE2E2B1D84A000EC6B3F /* PetInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DEDE2D2B1D84A000EC6B3F /* PetInfo.swift */; };
 		30DEDE312B1D955400EC6B3F /* EmailLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DEDE302B1D955400EC6B3F /* EmailLoginViewController.swift */; };
 		30DEDE332B1DA55200EC6B3F /* EmailLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DEDE322B1DA55200EC6B3F /* EmailLoginViewModel.swift */; };
+		30DEDE362B1F22D900EC6B3F /* ProgressButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DEDE352B1F22D900EC6B3F /* ProgressButton.swift */; };
+		30DEDE392B1F232400EC6B3F /* FancyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DEDE382B1F232400EC6B3F /* FancyButton.swift */; };
+		30DEDE3D2B1F235900EC6B3F /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DEDE3C2B1F235900EC6B3F /* Extension+String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +96,9 @@
 		30DEDE2D2B1D84A000EC6B3F /* PetInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetInfo.swift; sourceTree = "<group>"; };
 		30DEDE302B1D955400EC6B3F /* EmailLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailLoginViewController.swift; sourceTree = "<group>"; };
 		30DEDE322B1DA55200EC6B3F /* EmailLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailLoginViewModel.swift; sourceTree = "<group>"; };
+		30DEDE352B1F22D900EC6B3F /* ProgressButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressButton.swift; sourceTree = "<group>"; };
+		30DEDE382B1F232400EC6B3F /* FancyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyButton.swift; sourceTree = "<group>"; };
+		30DEDE3C2B1F235900EC6B3F /* Extension+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,27 +194,29 @@
 		3063A0122B12121400485662 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				30DEDE342B1F22C600EC6B3F /* CustomView */,
 				30DEDE292B1D82EB00EC6B3F /* UserData */,
 				30DEDE0B2B17667B00EC6B3F /* Coordinator */,
 				3063A0142B12122200485662 /* Extensions */,
-				3063A0132B12121900485662 /* Utility */,
+				3063A0132B12121900485662 /* Utils */,
 			);
 			path = Common;
 			sourceTree = "<group>";
 		};
-		3063A0132B12121900485662 /* Utility */ = {
+		3063A0132B12121900485662 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				3063A0322B12145100485662 /* BBColor.swift */,
 			);
-			path = Utility;
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		3063A0142B12122200485662 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				3063A0322B12145100485662 /* BBColor.swift */,
 				3063A0172B12125D00485662 /* Extension+UIColor.swift */,
 				30DEDE1E2B176AA100EC6B3F /* Extension+UIImage.swift */,
+				30DEDE3C2B1F235900EC6B3F /* Extension+String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -300,6 +308,23 @@
 				30DEDE322B1DA55200EC6B3F /* EmailLoginViewModel.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		30DEDE342B1F22C600EC6B3F /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				30DEDE372B1F231400EC6B3F /* Button */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		30DEDE372B1F231400EC6B3F /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				30DEDE352B1F22D900EC6B3F /* ProgressButton.swift */,
+				30DEDE382B1F232400EC6B3F /* FancyButton.swift */,
+			);
+			path = Button;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -458,6 +483,7 @@
 				3063A0182B12125D00485662 /* Extension+UIColor.swift in Sources */,
 				304DC61B2B11DAA500E01656 /* ViewController.swift in Sources */,
 				30DEDE2C2B1D830400EC6B3F /* UserInfo.swift in Sources */,
+				30DEDE3D2B1F235900EC6B3F /* Extension+String.swift in Sources */,
 				30DEDE1B2B1767D300EC6B3F /* TabSettingViewModel.swift in Sources */,
 				30DEDE272B1D80E700EC6B3F /* MyCardView.swift in Sources */,
 				30DEDE142B1766EE00EC6B3F /* TabHomeViewController.swift in Sources */,
@@ -465,6 +491,8 @@
 				30DEDE1F2B176AA100EC6B3F /* Extension+UIImage.swift in Sources */,
 				30DEDE1D2B17686200EC6B3F /* MainTabBarController.swift in Sources */,
 				304DC6172B11DAA500E01656 /* AppDelegate.swift in Sources */,
+				30DEDE392B1F232400EC6B3F /* FancyButton.swift in Sources */,
+				30DEDE362B1F22D900EC6B3F /* ProgressButton.swift in Sources */,
 				30DEDE172B1767A400EC6B3F /* TabSettingViewController.swift in Sources */,
 				304DC6192B11DAA500E01656 /* SceneDelegate.swift in Sources */,
 				30DEDE2E2B1D84A000EC6B3F /* PetInfo.swift in Sources */,

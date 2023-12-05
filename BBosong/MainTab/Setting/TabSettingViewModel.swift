@@ -7,19 +7,22 @@
 
 import Foundation
 
-struct Item {
+enum SettingType {
+    case appVersion
+}
+
+struct SettingItem {
     let title: String
+    let type: SettingType
 }
 
 class TabSettingViewModel {
-    var items: [Item] = []
+    var settingItems: [SettingItem] = []
 
     func fetchItems() {
         // 아이템을 가져오는 로직이라 가정
-        items = [
-            Item(title: "Item A"),
-            Item(title: "Item B"),
-            Item(title: "Item C")
+        settingItems = [
+            SettingItem(title: "현재 버전", type: .appVersion)
         ]
     }
 }
