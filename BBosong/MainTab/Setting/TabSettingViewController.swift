@@ -56,4 +56,8 @@ class TabSettingViewController: UIViewController {
             make.height.equalTo(70)
         }
     }
+    
+    private func setUpBindings() {
+        
+    }
 }
