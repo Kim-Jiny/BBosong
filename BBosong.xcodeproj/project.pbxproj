@@ -46,6 +46,7 @@
 		30DEDE362B1F22D900EC6B3F /* ProgressButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DEDE352B1F22D900EC6B3F /* ProgressButton.swift */; };
 		30DEDE392B1F232400EC6B3F /* FancyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DEDE382B1F232400EC6B3F /* FancyButton.swift */; };
 		30DEDE3D2B1F235900EC6B3F /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DEDE3C2B1F235900EC6B3F /* Extension+String.swift */; };
+		30DEDE422B27556600EC6B3F /* SessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DEDE412B27556600EC6B3F /* SessionService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,7 @@
 		30DEDE352B1F22D900EC6B3F /* ProgressButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressButton.swift; sourceTree = "<group>"; };
 		30DEDE382B1F232400EC6B3F /* FancyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyButton.swift; sourceTree = "<group>"; };
 		30DEDE3C2B1F235900EC6B3F /* Extension+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
+		30DEDE412B27556600EC6B3F /* SessionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +196,7 @@
 		3063A0122B12121400485662 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				30DEDE402B27555200EC6B3F /* Service */,
 				30DEDE342B1F22C600EC6B3F /* CustomView */,
 				30DEDE292B1D82EB00EC6B3F /* UserData */,
 				30DEDE0B2B17667B00EC6B3F /* Coordinator */,
@@ -325,6 +328,14 @@
 				30DEDE382B1F232400EC6B3F /* FancyButton.swift */,
 			);
 			path = Button;
+			sourceTree = "<group>";
+		};
+		30DEDE402B27555200EC6B3F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				30DEDE412B27556600EC6B3F /* SessionService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -487,6 +498,7 @@
 				30DEDE1B2B1767D300EC6B3F /* TabSettingViewModel.swift in Sources */,
 				30DEDE272B1D80E700EC6B3F /* MyCardView.swift in Sources */,
 				30DEDE142B1766EE00EC6B3F /* TabHomeViewController.swift in Sources */,
+				30DEDE422B27556600EC6B3F /* SessionService.swift in Sources */,
 				30DEDE242B19B4A800EC6B3F /* BBNavigationBar.swift in Sources */,
 				30DEDE1F2B176AA100EC6B3F /* Extension+UIImage.swift in Sources */,
 				30DEDE1D2B17686200EC6B3F /* MainTabBarController.swift in Sources */,
