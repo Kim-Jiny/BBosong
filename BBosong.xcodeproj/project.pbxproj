@@ -47,6 +47,7 @@
 		30DEDE392B1F232400EC6B3F /* FancyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DEDE382B1F232400EC6B3F /* FancyButton.swift */; };
 		30DEDE3D2B1F235900EC6B3F /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DEDE3C2B1F235900EC6B3F /* Extension+String.swift */; };
 		30DEDE422B27556600EC6B3F /* SessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DEDE412B27556600EC6B3F /* SessionService.swift */; };
+		30DEDE452B28AB5800EC6B3F /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DEDE442B28AB5800EC6B3F /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +102,7 @@
 		30DEDE382B1F232400EC6B3F /* FancyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyButton.swift; sourceTree = "<group>"; };
 		30DEDE3C2B1F235900EC6B3F /* Extension+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
 		30DEDE412B27556600EC6B3F /* SessionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionService.swift; sourceTree = "<group>"; };
+		30DEDE442B28AB5800EC6B3F /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,7 +198,8 @@
 		3063A0122B12121400485662 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				30DEDE402B27555200EC6B3F /* Service */,
+				30DEDE432B28AB4600EC6B3F /* Protocols */,
+				30DEDE402B27555200EC6B3F /* Services */,
 				30DEDE342B1F22C600EC6B3F /* CustomView */,
 				30DEDE292B1D82EB00EC6B3F /* UserData */,
 				30DEDE0B2B17667B00EC6B3F /* Coordinator */,
@@ -330,12 +333,20 @@
 			path = Button;
 			sourceTree = "<group>";
 		};
-		30DEDE402B27555200EC6B3F /* Service */ = {
+		30DEDE402B27555200EC6B3F /* Services */ = {
 			isa = PBXGroup;
 			children = (
 				30DEDE412B27556600EC6B3F /* SessionService.swift */,
 			);
-			path = Service;
+			path = Services;
+			sourceTree = "<group>";
+		};
+		30DEDE432B28AB4600EC6B3F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				30DEDE442B28AB5800EC6B3F /* DataManager.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -507,6 +518,7 @@
 				30DEDE362B1F22D900EC6B3F /* ProgressButton.swift in Sources */,
 				30DEDE172B1767A400EC6B3F /* TabSettingViewController.swift in Sources */,
 				304DC6192B11DAA500E01656 /* SceneDelegate.swift in Sources */,
+				30DEDE452B28AB5800EC6B3F /* DataManager.swift in Sources */,
 				30DEDE2E2B1D84A000EC6B3F /* PetInfo.swift in Sources */,
 				30DEDE192B1767C900EC6B3F /* TabHomeViewModel.swift in Sources */,
 				30DEDE0D2B17668900EC6B3F /* Coordinator.swift in Sources */,
